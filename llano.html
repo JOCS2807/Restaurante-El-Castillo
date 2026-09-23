@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos del Llano | Restaurante El Castillo</title>
+    <link rel="icon" href="imgs/castillo.avif">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <span class="brand-badge">📍 Pompeya Alto, Meta • Vía Villavicencio - Puerto López</span>
+        <div class="header-logo-title">
+            <img src="imgs/castillo.avif" alt="Logo Restaurante El Castillo" class="header-logo-img">
+            <h1>🍴 Restaurante <span>El Castillo</span></h1>
+        </div>
+        <p>Tradición artesanal, fogón a la leña y el auténtico sabor del Llano colombiano</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Nuestra Historia</a>
+    <a href="empanadas.html">🥟 Empanadas</a>
+    <a href="llano.html" class="active">🐄 Platos del Llano</a>
+    <a href="contacto.html">📍 Contacto</a>
+    <button class="nav-cart-btn" onclick="CastilloCart.openCart()">
+        🛒 Pedido <span class="nav-cart-badge" style="display:none;">0</span>
+    </button>
+</nav>
+
+<div class="page-hero">
+    <div class="container">
+        <span class="section-tag">Herencia Llanera a la Leña</span>
+        <h1>🐄 Platos Típicos del Llano</h1>
+        <p>Asados pacientes al calor de la leña nativa, cortes selectos de res y el auténtico sabor de nuestras llanuras.</p>
+    </div>
+</div>
+
+<section id="productos">
+    <div class="container">
+
+        <div class="productos-grid">
+
+            <!-- Card 1: Mamona (Carne a la Llanera) -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">🔥 La Reina del Fogón</span>
+                    <img src="imgs/mamona.webp" alt="Mamona - Carne a la Llanera">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Mamona (Carne a la Llanera)</h3>
+                        <div class="precio-tag">$25.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Cortes tradicionales de ternera llanera seleccionada (churrasco, costilla y pulpa jugosa), sal marina gruesa, leña de monte para el ahumado natural. Servida con plátano maduro asado al carbón, yuca al vapor y ají criollo.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Tradicional
+                            </div>
+                            <div class="culinario-texto">
+                                Ensartada tradicionalmente en chuzos o varas alrededor del fogón circular a fuego lento durante 4 a 5 horas. El humo de leña nativa y la cocción lenta sellan los jugos internos, dejando una corteza dorada y crocante con carne extraordinariamente tierna.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'llano_mamona', name: 'Mamona (Carne a la Llanera)', price: 25000, img: 'imgs/mamona.webp' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Mamona (Carne a la Llanera)', 25000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Carne Asada -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">🥩 Corte a la Brasa</span>
+                    <img src="imgs/carne asada.jpg" alt="Carne Asada a la Brasa">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Carne Asada</h3>
+                        <div class="precio-tag">$20.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Generoso corte de lomo o chata de res madurada, adobo natural de ajos machacados, comino campesino, cerveza artesanal, cilantro cimarrón y sal parrillera. Acompañada de papa salada al estilo llanero y chimichurri criollo.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Tradicional
+                            </div>
+                            <div class="culinario-texto">
+                                Marinada durante 12 horas en adobo llanero para ablandar y potenciar los sabores. Se sella en parrilla a fuego vivo sobre brasas de carbón y leña, logrando una caramelización exterior perfecta mientras mantiene el centro tierno y jugoso.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'llano_carne_asada', name: 'Carne Asada', price: 20000, img: 'imgs/carne asada.jpg' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Carne Asada', 20000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Arepa Llanera -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">🧀 100% Maíz y Queso</span>
+                    <img src="imgs/arepa.webp" alt="Arepa Llanera de Maíz con Queso">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Arepa Llanera</h3>
+                        <div class="precio-tag">$5.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Maíz peto blanco trillado y cocido de manera artesanal, generosa porción de queso campesino fresco o cuajada del Meta, mantequilla pura de hacienda y una pizca de sal marina.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Tradicional
+                            </div>
+                            <div class="culinario-texto">
+                                Molido tradicional de maíz puro sin conservantes ni químicos. Amasada a mano con cuajada campesina y mantequilla dorada. Se asa lentamente sobre tiesto de barro o parrilla de leña hasta obtener una costra crocante y un interior suave con queso derretido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'llano_arepa', name: 'Arepa Llanera', price: 5000, img: 'imgs/arepa.webp' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Arepa Llanera', 5000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tradición del Asado Llanero Banner -->
+        <div style="margin-top: 50px; background: linear-gradient(135deg, #1c1917, #292524); border: 1px solid #78350f; border-radius: 20px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <div style="max-width: 850px; margin: 0 auto; text-align: center;">
+                <span style="color: #f59e0b; text-transform: uppercase; font-size: 13px; font-weight: 700; letter-spacing: 2px;">Cultura & Tradición</span>
+                <h3 style="font-size: 26px; color: #ffffff; margin: 10px 0 15px 0;">El Rito de la Carne a la Llanera</h3>
+                <p style="color: #d1d5db; font-size: 16px; line-height: 1.7; margin-bottom: 25px;">
+                    En los Llanos Orientales, asar la mamona es una celebración. La carne se ensarta en varas largas de madera alrededor del fuego en círculo (el fogón), inclinadas de tal forma que reciban calor parejo sin quemarse con las llamas. Cada porción se corta caliente y se sirve con la hospitalidad característica del llanero.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <a href="https://wa.me/573132893218?text=Hola,%20deseo%20hacer%20un%20pedido%20de%20platos%20del%20Llano%20en%20Restaurante%20El%20Castillo" target="_blank" class="btn-whatsapp-cta">
+                        📲 Pedir Platos del Llano por WhatsApp
+                    </a>
+                    <a href="contacto.html" class="btn-secondary">
+                        📍 Ver Cómo Llegar a El Castillo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-top-grid">
+        <div class="footer-brand">
+            <h3>🍴 Restaurante El Castillo</h3>
+            <p>
+                Tradición artesanal, fuego a la leña y hospitalidad llanera. Especialistas en empanadas de autor y auténtica mamona a la llanera en Pompeya Alto, Meta.
+            </p>
+            <p style="color: #f59e0b; font-weight: 600; font-size: 13.5px;">
+                📍 Vía Villavicencio - Puerto López (Pompeya Alto)
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Nuestra Historia</a></li>
+                <li><a href="empanadas.html">Empanadas Artesanales</a></li>
+                <li><a href="llano.html">Platos Típicos del Llano</a></li>
+                <li><a href="contacto.html">Ubicación y Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Horarios</h4>
+            <ul>
+                <li><span style="color: #d1d5db;">Lunes a Domingo</span></li>
+                <li><span style="color: #4ade80; font-weight: 700;">8:00 a. m. - 9:00 p. m.</span></li>
+                <li style="margin-top: 10px;"><span style="color: #9ca3af;">Servicio continuo</span></li>
+                <li><span style="color: #9ca3af;">En mesa y para llevar</span></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Síguenos en Redes</h4>
+            <p style="color: #9ca3af; font-size: 13.5px; margin-bottom: 10px;">Conoce nuestro fogón y las promociones del día:</p>
+            <div class="footer-socials">
+                <a href="https://wa.me/573132893218" target="_blank" class="footer-social-icon" title="WhatsApp Pedidos" aria-label="WhatsApp">
+                    💬
+                </a>
+                <a href="https://instagram.com/restauranteelcastillo" target="_blank" class="footer-social-icon" title="Instagram Oficial" aria-label="Instagram">
+                    📷
+                </a>
+                <a href="https://facebook.com/restauranteelcastillopompeya" target="_blank" class="footer-social-icon" title="Facebook Página" aria-label="Facebook">
+                    👍
+                </a>
+                <a href="https://tiktok.com/@restauranteelcastillo" target="_blank" class="footer-social-icon" title="TikTok" aria-label="TikTok">
+                    🎵
+                </a>
+            </div>
+            <div style="margin-top: 15px;">
+                <button onclick="CastilloCart.openCart()" class="btn-primary" style="padding: 8px 16px; font-size: 13.5px; width: 100%; justify-content: center;">
+                    🛒 Ver Mi Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div>
+            © 2026 Restaurante El Castillo | Todos los derechos reservados.
+        </div>
+        <div>
+            Pompeya Alto, Villavicencio - Meta • Tel: 313 289 3218
+        </div>
+    </div>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empanadas Artesanales | Restaurante El Castillo</title>
+    <link rel="icon" href="imgs/castillo.avif">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <span class="brand-badge">📍 Pompeya Alto, Meta • Vía Villavicencio - Puerto López</span>
+        <div class="header-logo-title">
+            <img src="imgs/castillo.avif" alt="Logo Restaurante El Castillo" class="header-logo-img">
+            <h1>🍴 Restaurante <span>El Castillo</span></h1>
+        </div>
+        <p>Tradición artesanal, fogón a la leña y el auténtico sabor del Llano colombiano</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Nuestra Historia</a>
+    <a href="empanadas.html" class="active">🥟 Empanadas</a>
+    <a href="llano.html">🐄 Platos del Llano</a>
+    <a href="contacto.html">📍 Contacto</a>
+    <button class="nav-cart-btn" onclick="CastilloCart.openCart()">
+        🛒 Pedido <span class="nav-cart-badge" style="display:none;">0</span>
+    </button>
+</nav>
+
+<div class="page-hero">
+    <div class="container">
+        <span class="section-tag">Receta Exclusiva de la Casa</span>
+        <h1>🥟 Empanadas 100% Artesanales</h1>
+        <p>Masa crocante de maíz amarillo recién molido, rellenos jugosos cocidos a fuego lento y salsas de la casa.</p>
+    </div>
+</div>
+
+<section id="productos">
+    <div class="container">
+
+        <div class="productos-grid">
+
+            <!-- Card 1: Empanada de Carne -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">⭐ La Favorita del Llano</span>
+                    <img src="imgs/carne.webp" alt="Empanada de Carne Artesanal">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Empanada de Carne</h3>
+                        <div class="precio-tag">$3.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Masa de maíz amarillo 100% natural crocante, falda y pecho de res seleccionados y desmechados a mano, papa criolla suave, cebollín campesino, tomate maduro, ajo fresco y finas especias llaneras.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Artesanal
+                            </div>
+                            <div class="culinario-texto">
+                                Cocción lenta de la carne por más de 3 horas hasta desmechar. Se integra con un hogao casero tradicional y papa criolla. Se envuelve manualmente en masa fina de maíz recién molido y se dora en aceite limpio a temperatura óptima logrando un exterior crujiente y relleno sumamente jugoso.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'emp_carne', name: 'Empanada de Carne', price: 3000, img: 'imgs/carne.webp' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Empanada de Carne', 3000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Empanada de Pollo -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">🍗 100% Pechuga Jugosa</span>
+                    <img src="imgs/pollo.webp" alt="Empanada de Pollo Artesanal">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Empanada de Pollo</h3>
+                        <div class="precio-tag">$3.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Pura pechuga de pollo campesino desmenuzada, masa fina de maíz trillado, papa criolla tierna, cebolla junca picada finamente, pimentón dulce, cilantro cimarrón y sazón secreta de El Castillo.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Artesanal
+                            </div>
+                            <div class="culinario-texto">
+                                La pechuga se cocina a fuego suave con finas hierbas y fondo aromático. Se desmenuza y se rehoga en sofrito de verduras frescas y papa criolla que le da una textura cremosa inigualable. Rellenada y sellada a mano, frita al momento para conservar su textura dorada.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'emp_pollo', name: 'Empanada de Pollo', price: 3000, img: 'imgs/pollo.webp' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Empanada de Pollo', 3000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Empanada Mixta -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">👑 La Combinación Perfecta</span>
+                    <img src="imgs/mixtas.jpg" alt="Empanada Mixta Artesanal">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Empanada Mixta</h3>
+                        <div class="precio-tag">$3.500</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Carne de res desmechada jugosa y pechuga de pollo desmenuzada en proporción ideal, papa criolla suavecita, guiso criollo con cebolla larga, tomate chonto y orégano de huerta, envueltas en masa de maíz amarillo.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Artesanal
+                            </div>
+                            <div class="culinario-texto">
+                                Fusión de nuestras dos carnes insignias en una reducción lenta de hogao casero con especias naturales del Meta. Se envuelve en masa delgada artesanal y se fríe logrando un bocado equilibrado que une la contundencia de la carne con la suavidad aromática del pollo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'emp_mixta', name: 'Empanada Mixta', price: 3500, img: 'imgs/mixtas.jpg' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Empanada Mixta', 3500)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Acompañamientos de la casa -->
+        <div style="margin-top: 50px; background: #111827; border: 1px solid #374151; border-radius: 18px; padding: 30px; text-align: center;">
+            <h3 style="font-size: 22px; color: #f59e0b; margin-bottom: 12px;">🌶️ Acompañamientos Incluidos con tu Pedido</h3>
+            <p style="color: #d1d5db; max-width: 750px; margin: 0 auto 20px auto; font-size: 15px;">
+                Todas nuestras empanadas se entregan acompañadas de cortesía con:
+            </p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <span style="background: #1f2937; padding: 8px 16px; border-radius: 50px; border: 1px solid #374151; font-size: 14px; color: #f3f4f6;">
+                    🌶️ Ají Casero Picante
+                </span>
+                <span style="background: #1f2937; padding: 8px 16px; border-radius: 50px; border: 1px solid #374151; font-size: 14px; color: #f3f4f6;">
+                    🧄 Salsa de Ajo Cremosa
+                </span>
+                <span style="background: #1f2937; padding: 8px 16px; border-radius: 50px; border: 1px solid #374151; font-size: 14px; color: #f3f4f6;">
+                    🥑 Guacamole Criollo
+                </span>
+                <span style="background: #1f2937; padding: 8px 16px; border-radius: 50px; border: 1px solid #374151; font-size: 14px; color: #f3f4f6;">
+                    🍋 Limón Mandarina Fresco
+                </span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-top-grid">
+        <div class="footer-brand">
+            <h3>🍴 Restaurante El Castillo</h3>
+            <p>
+                Tradición artesanal, fuego a la leña y hospitalidad llanera. Especialistas en empanadas de autor y auténtica mamona a la llanera en Pompeya Alto, Meta.
+            </p>
+            <p style="color: #f59e0b; font-weight: 600; font-size: 13.5px;">
+                📍 Vía Villavicencio - Puerto López (Pompeya Alto)
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Nuestra Historia</a></li>
+                <li><a href="empanadas.html">Empanadas Artesanales</a></li>
+                <li><a href="llano.html">Platos Típicos del Llano</a></li>
+                <li><a href="contacto.html">Ubicación y Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Horarios</h4>
+            <ul>
+                <li><span style="color: #d1d5db;">Lunes a Domingo</span></li>
+                <li><span style="color: #4ade80; font-weight: 700;">8:00 a. m. - 9:00 p. m.</span></li>
+                <li style="margin-top: 10px;"><span style="color: #9ca3af;">Servicio continuo</span></li>
+                <li><span style="color: #9ca3af;">En mesa y para llevar</span></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Síguenos en Redes</h4>
+            <p style="color: #9ca3af; font-size: 13.5px; margin-bottom: 10px;">Conoce nuestro fogón y las promociones del día:</p>
+            <div class="footer-socials">
+                <a href="https://wa.me/573132893218" target="_blank" class="footer-social-icon" title="WhatsApp Pedidos" aria-label="WhatsApp">
+                    💬
+                </a>
+                <a href="https://instagram.com/restauranteelcastillo" target="_blank" class="footer-social-icon" title="Instagram Oficial" aria-label="Instagram">
+                    📷
+                </a>
+                <a href="https://facebook.com/restauranteelcastillopompeya" target="_blank" class="footer-social-icon" title="Facebook Página" aria-label="Facebook">
+                    👍
+                </a>
+                <a href="https://tiktok.com/@restauranteelcastillo" target="_blank" class="footer-social-icon" title="TikTok" aria-label="TikTok">
+                    🎵
+                </a>
+            </div>
+            <div style="margin-top: 15px;">
+                <button onclick="CastilloCart.openCart()" class="btn-primary" style="padding: 8px 16px; font-size: 13.5px; width: 100%; justify-content: center;">
+                    🛒 Ver Mi Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div>
+            © 2026 Restaurante El Castillo | Todos los derechos reservados.
+        </div>
+        <div>
+            Pompeya Alto, Villavicencio - Meta • Tel: 313 289 3218
+        </div>
+    </div>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

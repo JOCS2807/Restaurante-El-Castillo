@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante El Castillo | Sabor Auténtico del Llano y Empanadas</title>
+    <link rel="icon" href="imgs/castillo.avif">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <span class="brand-badge">📍 Pompeya Alto, Meta • Vía Villavicencio - Puerto López</span>
+        <div class="header-logo-title">
+            <img src="imgs/castillo.avif" alt="Logo Restaurante El Castillo" class="header-logo-img">
+            <h1>🍴 Restaurante <span>El Castillo</span></h1>
+        </div>
+        <p>Tradición artesanal, fogón a la leña y el auténtico sabor del Llano colombiano</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Inicio</a>
+    <a href="historia.html">Nuestra Historia</a>
+    <a href="empanadas.html">🥟 Empanadas</a>
+    <a href="llano.html">🐄 Platos del Llano</a>
+    <a href="contacto.html">📍 Contacto</a>
+    <button class="nav-cart-btn" onclick="CastilloCart.openCart()">
+        🛒 Pedido <span class="nav-cart-badge" style="display:none;">0</span>
+    </button>
+</nav>
+
+<!-- Hero Principal -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">
+            🔥 Fogón a la Leña • Empanadas de Maíz 100% Natural
+        </div>
+        <h2>Tradición Llanera & <span>Sabor Auténtico</span></h2>
+        <p>
+            Bienvenido a tu parada gastronómica obligatoria en Pompeya Alto (Meta). Deleita tu paladar con la genuina mamona asada a fuego lento y nuestras famosas empanadas crocantes de autor.
+        </p>
+        <div class="hero-buttons">
+            <a href="#especialidades" class="btn-primary">
+                🍽️ Ver Especialidades
+            </a>
+            <a href="historia.html" class="btn-secondary">
+                📖 Conoce Nuestra Historia
+            </a>
+            <a href="https://wa.me/573132893218?text=¡Hola!%20Deseo%20hacer%20un%20pedido%20en%20Restaurante%20El%20Castillo." target="_blank" class="btn-whatsapp-cta">
+                💬 Pedir por WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Resumen Historia -->
+<section id="historia-resumen" style="background: #090d16; border-top: 1px solid #1f2937; border-bottom: 1px solid #1f2937;">
+    <div class="container">
+        <div class="story-grid">
+            <div class="story-image">
+                <img src="imgs/castillo.avif" alt="Restaurante El Castillo en Pompeya Alto">
+            </div>
+            <div class="story-content">
+                <span class="section-tag">Nuestras Raíces</span>
+                <h3>Un Refugio de Tradición en <span>Pompeya Alto</span></h3>
+                <p>
+                    Ubicado estratégicamente sobre la vía Villavicencio - Puerto López, <strong>Restaurante El Castillo</strong> nació para rendir tributo a la riqueza del Llano. Aquí preservamos la mística del asado a la leña en chuzos de madera y el secreto familiar de nuestras empanadas de maíz amarillo recién molido.
+                </p>
+                <p>
+                    Cada plato es preparado con ingredientes frescos cultivados por campesinos del Meta, sirviendo porciones generosas acompañadas de la calidez inconfundible de nuestra gente.
+                </p>
+                <div style="margin-top: 20px;">
+                    <a href="historia.html" class="btn-primary" style="display: inline-flex;">
+                        Leer Nuestra Historia Completa →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Especialidades Destacadas -->
+<section id="especialidades">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Directo del Fogón</span>
+            <h2 class="section-title">Especialidades <span>Destacadas</span></h2>
+            <p class="section-description">
+                Elige tus favoritos, agrégalos a tu pedido y envíalos con un solo clic a nuestro WhatsApp para preparar tu orden de inmediato.
+            </p>
+        </div>
+
+        <div class="productos-grid">
+
+            <!-- Plato 1: Mamona -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">🔥 Plato Insignia</span>
+                    <img src="imgs/mamona.webp" alt="Mamona Llanera El Castillo">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Mamona (Carne a la Llanera)</h3>
+                        <div class="precio-tag">$25.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Cortes tiernos de ternera llanera seleccionada (churrasco, costilla y pulpa), sal marina gruesa y leña de monte para ahumado natural. Servida con plátano maduro asado, yuca al vapor y ají casero.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Artesanal
+                            </div>
+                            <div class="culinario-texto">
+                                Ensartada en chuzos de madera alrededor de brasas vivas durante 4 a 5 horas. Cocción lenta que sella los jugos y dora la piel para un cuero crocante y carne suave.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'llano_mamona', name: 'Mamona (Carne a la Llanera)', price: 25000, img: 'imgs/mamona.webp' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Mamona (Carne a la Llanera)', 25000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plato 2: Empanada de Carne -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">⭐ Favorita de la Casa</span>
+                    <img src="imgs/carne.webp" alt="Empanada de Carne El Castillo">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Empanada de Carne</h3>
+                        <div class="precio-tag">$3.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Masa de maíz amarillo 100% natural crocante, falda de res desmechada a mano, papa criolla suavecita, cebolla campesina, tomate maduro y sazón tradicional.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Artesanal
+                            </div>
+                            <div class="culinario-texto">
+                                Carne guisada a fuego lento con hogao casero y papa criolla. Rellena en masa delgada de maíz fresco y frita al instante para máxima crocancia.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'emp_carne', name: 'Empanada de Carne', price: 3000, img: 'imgs/carne.webp' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Empanada de Carne', 3000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plato 3: Carne Asada -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">🥩 Asado a la Brasa</span>
+                    <img src="imgs/carne asada.jpg" alt="Carne Asada El Castillo">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Carne Asada</h3>
+                        <div class="precio-tag">$20.000</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Lomo o chata de res madurada, adobo natural de ajos, cerveza y especias del llano. Servida con papa salada y chimichurri criollo de la casa.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Artesanal
+                            </div>
+                            <div class="culinario-texto">
+                                Marinada durante 12 horas y asada al calor del carbón y la leña para sellar los sabores y obtener un corte jugoso con aroma ahumado.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'llano_carne_asada', name: 'Carne Asada', price: 20000, img: 'imgs/carne asada.jpg' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Carne Asada', 20000)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plato 4: Empanada Mixta -->
+            <div class="card-producto">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">👑 Res & Pollo</span>
+                    <img src="imgs/mixtas.jpg" alt="Empanada Mixta El Castillo">
+                </div>
+                <div class="card-body">
+                    <div class="card-header-info">
+                        <h3>Empanada Mixta</h3>
+                        <div class="precio-tag">$3.500</div>
+                    </div>
+
+                    <div class="detalle-culinario">
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🌿 Ingredientes
+                            </div>
+                            <div class="culinario-texto">
+                                Carne de res desmechada, pechuga de pollo desmenuzada, papita criolla, guiso casero con orégano y masa crujiente de maíz amarillo.
+                            </div>
+                        </div>
+                        <div class="culinario-item">
+                            <div class="culinario-label">
+                                🔥 Preparación Artesanal
+                            </div>
+                            <div class="culinario-texto">
+                                Fusión de carnes selectas reducidas en sofrito casero con especias del campo. Envuelta a mano y dorada al momento para una textura insuperable.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn-add-cart" onclick="CastilloCart.addItem({ id: 'emp_mixta', name: 'Empanada Mixta', price: 3500, img: 'imgs/mixtas.jpg' })">
+                            🛒 Agregar al Pedido
+                        </button>
+                        <button class="btn-quick-wa" onclick="CastilloCart.quickOrder('Empanada Mixta', 3500)">
+                            💬 Pedir Directo por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Enlaces a Menús Completos -->
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px; flex-wrap: wrap;">
+            <a href="empanadas.html" class="btn-primary">
+                🥟 Ver Todas las Empanadas
+            </a>
+            <a href="llano.html" class="btn-secondary">
+                🐄 Ver Todos los Platos del Llano
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Por Qué Elegirnos -->
+<section id="por-que-elegirnos" style="background: #090d16;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Nuestra Garantía</span>
+            <h2 class="section-title">¿Por Qué Somos Tu Mejor <span>Elección?</span></h2>
+            <p class="section-description">
+                El secreto de nuestro sabor está en la fidelidad a las costumbres llaneras y el respeto por los ingredientes.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <span class="feature-icon">🪵</span>
+                <h4>Leña de Monte Seleccionada</h4>
+                <p>Nuestras carnes se asan con leña nativa que aporta ese toque ahumado auténtico imposible de imitar.</p>
+            </div>
+
+            <div class="feature-box">
+                <span class="feature-icon">🌽</span>
+                <h4>Masa de Maíz Fresco</h4>
+                <p>Sin premezclas ni conservantes. Cocinamos y molemos maíz puro todos los días para empanadas extra crocantes.</p>
+            </div>
+
+            <div class="feature-box">
+                <span class="feature-icon">📍</span>
+                <h4>Parada Estratégica</h4>
+                <p>Ubicados en Pompeya Alto sobre la vía principal, con amplio espacio y atención rápida para viajeros y familias.</p>
+            </div>
+
+            <div class="feature-box">
+                <span class="feature-icon">📲</span>
+                <h4>Pedidos Directos por WhatsApp</h4>
+                <p>Arma tu pedido en la web con carrito inteligente y recíbelo coordinado directamente con nuestro equipo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-top-grid">
+        <div class="footer-brand">
+            <h3>🍴 Restaurante El Castillo</h3>
+            <p>
+                Tradición artesanal, fuego a la leña y hospitalidad llanera. Especialistas en empanadas de autor y auténtica mamona a la llanera en Pompeya Alto, Meta.
+            </p>
+            <p style="color: #f59e0b; font-weight: 600; font-size: 13.5px;">
+                📍 Vía Villavicencio - Puerto López (Pompeya Alto)
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Nuestra Historia</a></li>
+                <li><a href="empanadas.html">Empanadas Artesanales</a></li>
+                <li><a href="llano.html">Platos Típicos del Llano</a></li>
+                <li><a href="contacto.html">Ubicación y Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Horarios</h4>
+            <ul>
+                <li><span style="color: #d1d5db;">Lunes a Domingo</span></li>
+                <li><span style="color: #4ade80; font-weight: 700;">8:00 a. m. - 9:00 p. m.</span></li>
+                <li style="margin-top: 10px;"><span style="color: #9ca3af;">Servicio continuo</span></li>
+                <li><span style="color: #9ca3af;">En mesa y para llevar</span></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Síguenos en Redes</h4>
+            <p style="color: #9ca3af; font-size: 13.5px; margin-bottom: 10px;">Conoce nuestro fogón y las promociones del día:</p>
+            <div class="footer-socials">
+                <a href="https://wa.me/573132893218" target="_blank" class="footer-social-icon" title="WhatsApp Pedidos" aria-label="WhatsApp">
+                    💬
+                </a>
+                <a href="https://instagram.com/restauranteelcastillo" target="_blank" class="footer-social-icon" title="Instagram Oficial" aria-label="Instagram">
+                    📷
+                </a>
+                <a href="https://facebook.com/restauranteelcastillopompeya" target="_blank" class="footer-social-icon" title="Facebook Página" aria-label="Facebook">
+                    👍
+                </a>
+                <a href="https://tiktok.com/@restauranteelcastillo" target="_blank" class="footer-social-icon" title="TikTok" aria-label="TikTok">
+                    🎵
+                </a>
+            </div>
+            <div style="margin-top: 15px;">
+                <button onclick="CastilloCart.openCart()" class="btn-primary" style="padding: 8px 16px; font-size: 13.5px; width: 100%; justify-content: center;">
+                    🛒 Ver Mi Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div>
+            © 2026 Restaurante El Castillo | Todos los derechos reservados.
+        </div>
+        <div>
+            Pompeya Alto, Villavicencio - Meta • Tel: 313 289 3218
+        </div>
+    </div>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>
