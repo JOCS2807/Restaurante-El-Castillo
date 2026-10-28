@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 # 🍽️ Restaurante El Castillo
 
@@ -82,4 +82,4 @@ https://jocs2807.github.io/Restaurante-El-Castillo/
 - Juan Camilo Acosta Vega-tester
 ## Institución
 Santa Teresa De Pachaquiaro-programacion de software- Grado 11 - Año 2026
->>>>>>> 8e599a46692a1c5ba327103dc7587fca66f94644
+
