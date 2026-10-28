@@ -1,2 +1,9 @@
-# Restaurante-El-Castillo
-Nuestra página web sirve para promocionar y dar a informar sobre lo que ofrecemos en nuestro restaurante, teniendo también un apartado para compras sobre lo que ofrecemos en nuestro restaurante
+
+
+---
+
+# Restaurante El Castillo
+
+Nuestra página web tiene como objetivo promocionar y brindar información sobre los servicios y productos que ofrecemos en nuestro restaurante. Además, contamos con una sección para realizar compras de los productos disponibles.
+
+
